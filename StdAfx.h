@@ -112,9 +112,9 @@
 #include <afxcmn.h>			// MFC support for Windows Common Controls
 #endif // _AFX_NO_AFXCMN_SUPPORT
 
-#ifndef NO_AFXTEMPL_SUPPORT
+#ifndef _AFX_NO_AFXTEMPL_SUPPORT
 #include <afxtempl.h>       // MFC template classes
-#endif //NO_AFXTEMPL_SUPPORT
+#endif //_AFX_NO_AFXTEMPL_SUPPORT
 
 struct _TREEITEM {};				// fix for warning LNK4248
 struct _IMAGELIST {};			// fix for warning LNK4248
@@ -127,7 +127,7 @@ struct _IMAGELIST {};			// fix for warning LNK4248
 #if defined(_ATL_STATIC_REGISTRY) || defined(_ATL_DLL)
 #include <atlbase.h>
 
-//#ifdef SCON_ATL_COM_SUPPORT
+//#ifdef _ATL_COM_SUPPORT
 //#include <atlcom.h>
 //#endif
 
